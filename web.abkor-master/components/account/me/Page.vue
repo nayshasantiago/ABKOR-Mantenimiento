@@ -654,6 +654,7 @@ export default {
 							transaction: this.profile
 						}
 					)
+					//Modificar ventana emergente de account.me
 					.then((resp) => {
 						this.dLoading.status = false
 						if (resp.status === 'SUCCESS') {
