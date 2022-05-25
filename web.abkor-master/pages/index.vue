@@ -115,6 +115,7 @@
 							.display-1.ml-10(style="color: white; justify-content: flex-end;" v-html="notice.description")
 		v-dialog(v-model="dProduct.status" scrollable persistent width="1000")
 			v-card
+				// Modificar la posición del título del producto
 				v-card-title.headline.grey.lighten-2(primary-title) {{ editedProduct.name }}
 				v-card-text(style="height: 600px")
 					v-container
@@ -122,9 +123,11 @@
 							v-col(cols="12" xs="12" sm="6" md="5" lg="5")
 								v-carousel(cycle height="300")
 									v-carousel-item(v-for="(photo, i) in editedProduct.photos" :key="i" :src="photo" reverse-transition="fade-transition" transition="fade-transition")
+							// Modificar la posición del elemento span que contiene la descripción del producto
 							v-col(cols="12" xs="12" sm="6" md="7" lg="7")
 								div(style="height: 300px; overflow-y: auto;")
 									span(v-html="editedProduct.description")
+							// Modificar la orientación del bloque que contiene los detalles del producto
 							v-col(cols="12" xs="12")
 								v-row
 									v-col.text-center(cols="12" xs="12" sm="12" md="12" lg="12")
@@ -147,6 +150,7 @@
 													template(v-if="!option.inactive" v-for="(option, idx) in variant.options")
 														v-chip(:key="idx") {{ option.name }}
 				v-divider
+				// Modificar la posición del
 				v-card-actions
 					v-spacer
 					v-btn(text @click="closeShowProduct" color="primary") Cerrar
