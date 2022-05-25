@@ -3,6 +3,7 @@
 		v-card.elevation-12
 			v-toolbar
 				v-toolbar-title
+					<!-- Se debe renderizar el tamaño de la imagen -->
 					img.mb-6(:src="configuration.company.logo" style="width: 250px;")
 				v-spacer
 			v-card-text(style="padding: 0px; min-height: 500px")
