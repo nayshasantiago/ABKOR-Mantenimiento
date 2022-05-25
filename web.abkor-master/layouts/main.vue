@@ -1,6 +1,7 @@
 <template lang="pug">
 	v-app(id="inspire")
 		v-main
+		<!-- Implementar Botón ¿Quienes Somos -->
 			v-app-bar(app)
 				v-app-bar-nav-icon.d-flex.d-sm-none(@click="drawer = !drawer")
 				v-toolbar-title.hidden-xs-only
