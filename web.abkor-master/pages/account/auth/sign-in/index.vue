@@ -357,6 +357,7 @@ export default {
 					})
 			}
 		},
+		// implementar seccion de terminos de políticas y privacidad
 		register() {
 			this.$v.user.$touch()
 			if (!this.$v.user.$invalid) {
